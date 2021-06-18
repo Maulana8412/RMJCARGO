@@ -70,7 +70,7 @@ Public Class SettingDBB
             Me.Dispose()
         Else
             Me.Dispose()
-            MenuUtama.Close()
+            FrmLogin.Close
         End If
     End Sub
 
