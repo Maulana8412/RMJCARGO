@@ -18,40 +18,41 @@ Public Class FrmLogin
             Registry.CurrentUser.OpenSubKey("SOFTWARE", True).OpenSubKey("RmjCargo", True).CreateSubKey("Database", RegistryKeyPermissionCheck.ReadWriteSubTree)
         End If
 
-        Try
-            Dim rKeyMySQL As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database\MySQL", True)
-            Dim Server As String = Decrypt(rKeyMySQL.GetValue("Server").ToString)
-            Dim Port As String = Decrypt(rKeyMySQL.GetValue("Port").ToString)
-            Dim Database As String = rKeyMySQL.GetValue("Database").ToString
-            Dim User As String = rKeyMySQL.GetValue("User").ToString
-            Dim Pwd As String = Decrypt(rKeyMySQL.GetValue("Password").ToString)
+        'Try
+        'Dim rKeyMySQL As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database\MySQL", True)
+        'Dim Server As String = Decrypt(rKeyMySQL.GetValue("Server").ToString)
+        'Dim Port As String = Decrypt(rKeyMySQL.GetValue("Port").ToString)
+        'Dim Database As String = rKeyMySQL.GetValue("Database").ToString
+        'Dim User As String = rKeyMySQL.GetValue("User").ToString
+        'Dim Pwd As String = Decrypt(rKeyMySQL.GetValue("Password").ToString)
 
-            Dim sql As String = String.Format("Server={0};Port={1};Uid={3};Pwd={4};Database={2};" _
-            & "SslMode=none", Server, Port, Database, User, Pwd)
-
-
-
-            MySQLconn = New MySqlConnection(sql)
-            If MySQLconn.State = ConnectionState.Closed Then
-                MySQLconn.Open()
-            End If
-
-        Catch ex As Exception
-            'MsgBox(Err.Description)
-            Me.Hide()
-            SettingDBB.ShowDialog()
-
-        End Try
-
-        'SQLconn.Close()
-
-        'Dim rKeyMySQL1 As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\IndieCashier\Database", True)
-        'Dim rKeyMySQL2 As RegistryKey = rKeyMySQL1.CreateSubKey("SQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
-        'Dim rKeyMySQL3 As RegistryKey = rKeyMySQL1.CreateSubKey("MySQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
+        'Dim sql As String = String.Format("Server={0};Port={1};Uid={3};Pwd={4};Database={2};" _
+        '& "SslMode=none", Server, Port, Database, User, Pwd)
 
 
 
-        txtUserName.Text = ""
+        'MySQLconn = New MySqlConnection(sql)
+        'If MySQLconn.State = ConnectionState.Closed Then
+        '    MySQLconn.Open()
+        'End If
+        OpenConnectionMySQL()
+
+            'Catch ex As Exception
+            '    MsgBox(Err.Description)
+            '    Me.Hide()
+            '    SettingDBB.ShowDialog()
+
+            'End Try
+
+            'SQLconn.Close()
+
+            'Dim rKeyMySQL1 As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\IndieCashier\Database", True)
+            'Dim rKeyMySQL2 As RegistryKey = rKeyMySQL1.CreateSubKey("SQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
+            'Dim rKeyMySQL3 As RegistryKey = rKeyMySQL1.CreateSubKey("MySQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
+
+
+
+            txtUserName.Text = ""
         txtPass.Text = ""
         'SettingDBSQL.Hide()
         'DBAlias.Hide()
@@ -70,7 +71,7 @@ Public Class FrmLogin
             OpenConnectionMySQL()
 
             Dim str As String
-            str = "select *From truser where UserId='" & txtUserName.Text & "' and password='" & txtPass.Text & "'"
+            str = "select *From userprogram where username='" & txtUserName.Text & "' and password='" & txtPass.Text & "'"
             MySQLcmd = New MySqlCommand(str, MySQLconn)
             MySQLdr = MySQLcmd.ExecuteReader
             If MySQLdr.HasRows Then
@@ -110,7 +111,7 @@ Public Class FrmLogin
                 OpenConnectionMySQL()
 
                 Dim str As String
-                str = "Select *From TRUSER where UserId='" & txtUserName.Text & "' and password='" & txtPass.Text & "'"
+                str = "Select *From userprogram where username='" & txtUserName.Text & "' and password='" & txtPass.Text & "'"
                 MySQLcmd = New MySqlCommand(str, MySQLconn)
                 MySQLdr = MySQLcmd.ExecuteReader
                 If MySQLdr.HasRows Then

@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
+Imports DevExpress.XtraEditors
 Imports Microsoft.Win32
 Imports MySql.Data.MySqlClient
 
@@ -9,55 +10,55 @@ Public Class SettingDBB
     Sub HapusDatabaseMySQL()
         Dim rKeyMySQL1 As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database", True)
         rKeyMySQL1.DeleteSubKey("MySQL", True)
-        End Sub
-        Sub BuatDatabaseMySQL()
+    End Sub
+    Sub BuatDatabaseMySQL()
         Dim rKeyMySQL1 As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database", True)
         Dim rKeyMySQL3 As RegistryKey = rKeyMySQL1.CreateSubKey("MySQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
         rKeyMySQL3.SetValue("Server", Encrypt(TextEdit3.Text), RegistryValueKind.String)
         rKeyMySQL3.SetValue("Port", Encrypt(TextEdit4.Text), RegistryValueKind.String)
         rKeyMySQL3.SetValue("User", TextEdit5.Text, RegistryValueKind.String)
         rKeyMySQL3.SetValue("Password", Encrypt(TextEdit6.Text), RegistryValueKind.String)
-            rKeyMySQL3.SetValue("Database", LookUpEdit1.Text, RegistryValueKind.String)
-            rKeyMySQL3.Close()
-            rKeyMySQL1.Close()
-        End Sub
+        rKeyMySQL3.SetValue("Database", LookUpEdit1.Text, RegistryValueKind.String)
+        rKeyMySQL3.Close()
+        rKeyMySQL1.Close()
+    End Sub
 
 
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-            Try
+        Try
 
             If TextEdit3.Text = "" Then
-                    MsgBox("Nama Server untuk MySQL belum di isi...")
-                    Exit Sub
-                End If
-                If TextEdit5.Text = "" Then
-                    MsgBox("User untuk MySQL belum di isi...")
-                    Exit Sub
-                End If
-                If TextEdit6.Text = "" Then
-                    MsgBox("Password untuk MySQL belum di isi...")
-                    Exit Sub
-                End If
-                If LookUpEdit1.Text = "" Then
-                    MsgBox("Database untuk MySQL belum di isi...")
-                    Exit Sub
-                End If
-                If TextEdit4.Text = "" Then
-                    MsgBox("Port untuk MySQL belum di isi...")
-                    Exit Sub
-                End If
+                MsgBox("Nama Server untuk MySQL belum di isi...")
+                Exit Sub
+            End If
+            If TextEdit5.Text = "" Then
+                MsgBox("User untuk MySQL belum di isi...")
+                Exit Sub
+            End If
+            If TextEdit6.Text = "" Then
+                MsgBox("Password untuk MySQL belum di isi...")
+                Exit Sub
+            End If
+            If LookUpEdit1.Text = "" Then
+                MsgBox("Database untuk MySQL belum di isi...")
+                Exit Sub
+            End If
+            If TextEdit4.Text = "" Then
+                MsgBox("Port untuk MySQL belum di isi...")
+                Exit Sub
+            End If
 
             Dim rKeyMySQL As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\PayRollSici\Database\MySQL", True)
 
             If rKeyMySQL Is Nothing Then
-                    BuatDatabaseMySQL()
-                Else
-                    HapusDatabaseMySQL()
-                    BuatDatabaseMySQL()
-                End If
+                BuatDatabaseMySQL()
+            Else
+                HapusDatabaseMySQL()
+                BuatDatabaseMySQL()
+            End If
 
-                MsgBox("Program akan di tutup, untuk memperbarui setting database...", vbOKOnly, "Setting Database")
-                Me.Close()
+            MsgBox("Program akan di tutup, untuk memperbarui setting database...", vbOKOnly, "Setting Database")
+            Me.Close()
             MenuUtama.Close()
         Catch ex As Exception
             MsgBox(Err.Description)
@@ -81,10 +82,10 @@ Public Class SettingDBB
             Dim list As List(Of String) = New List(Of String)
             Dim conString As String = "Server=" & TextEdit3.Text & ";Port=" & TextEdit4.Text & ";Uid=" & TextEdit5.Text & ";Pwd=" & TextEdit6.Text & ";SslMode = none"
 
-            Using con As MySql.Data.MySqlClient.MySqlConnection = New MySql.Data.MySqlClient.MySqlConnection(conString)
+            Using con As MySqlConnection = New MySqlConnection(conString)
                 con.Open()
 
-                Using cmd As MySql.Data.MySqlClient.MySqlCommand = New MySql.Data.MySqlClient.MySqlCommand("SHOW DATABASES", con)
+                Using cmd As MySqlCommand = New MySqlCommand("SHOW DATABASES", con)
 
                     Using dr As IDataReader = cmd.ExecuteReader()
 
@@ -97,18 +98,12 @@ Public Class SettingDBB
 
             End Using
         Catch ex As Exception
-            'XtraMessageBox.AllowCustomLookAndFeel = True
-            'XtraMessageBox.Show(Err.Description)
+            XtraMessageBox.AllowCustomLookAndFeel = True
+            XtraMessageBox.Show(Err.Description)
 
         End Try
     End Sub
 
-    Private Sub XtraTabControl1_Click(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub SettingDBB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
 

@@ -58,3 +58,9 @@ D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\ru\DevExpress.Pdf.v18.2.Core.res
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ CARGO.vbproj.CopyComplete
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ CARGO.exe
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ CARGO.pdb
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\DevExpress.XtraBars.v18.2.dll
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\DevExpress.XtraBars.v18.2.xml
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\de\DevExpress.XtraBars.v18.2.resources.dll
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\es\DevExpress.XtraBars.v18.2.resources.dll
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\ja\DevExpress.XtraBars.v18.2.resources.dll
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\ru\DevExpress.XtraBars.v18.2.resources.dll
