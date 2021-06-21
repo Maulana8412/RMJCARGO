@@ -18,41 +18,33 @@ Public Class FrmLogin
             Registry.CurrentUser.OpenSubKey("SOFTWARE", True).OpenSubKey("RmjCargo", True).CreateSubKey("Database", RegistryKeyPermissionCheck.ReadWriteSubTree)
         End If
 
-        'Try
-        'Dim rKeyMySQL As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database\MySQL", True)
-        'Dim Server As String = Decrypt(rKeyMySQL.GetValue("Server").ToString)
-        'Dim Port As String = Decrypt(rKeyMySQL.GetValue("Port").ToString)
-        'Dim Database As String = rKeyMySQL.GetValue("Database").ToString
-        'Dim User As String = rKeyMySQL.GetValue("User").ToString
-        'Dim Pwd As String = Decrypt(rKeyMySQL.GetValue("Password").ToString)
+        Try
+            Dim rKeyMySQL As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\RmjCargo\Database\MySQL", True)
+            Dim Server As String = Decrypt(rKeyMySQL.GetValue("Server").ToString)
+            Dim Port As String = Decrypt(rKeyMySQL.GetValue("Port").ToString)
+            Dim Database As String = rKeyMySQL.GetValue("Database").ToString
+            Dim User As String = rKeyMySQL.GetValue("User").ToString
+            Dim Pwd As String = Decrypt(rKeyMySQL.GetValue("Password").ToString)
 
-        'Dim sql As String = String.Format("Server={0};Port={1};Uid={3};Pwd={4};Database={2};" _
-        '& "SslMode=none", Server, Port, Database, User, Pwd)
+            Dim sql As String = String.Format("Server={0};Port={1};Uid={3};Pwd={4};Database={2};" _
+            & "SslMode=none", Server, Port, Database, User, Pwd)
 
+            MySQLconn = New MySqlConnection(sql)
+            If MySQLconn.State = ConnectionState.Closed Then
+                MySQLconn.Open()
+            End If
+            'OpenConnectionMySQL()
 
+        Catch ex As Exception
+            'MsgBox(Err.Description)
+            Me.Hide()
+            SettingDBB.ShowDialog()
 
-        'MySQLconn = New MySqlConnection(sql)
-        'If MySQLconn.State = ConnectionState.Closed Then
-        '    MySQLconn.Open()
-        'End If
-        OpenConnectionMySQL()
+        End Try
 
-            'Catch ex As Exception
-            '    MsgBox(Err.Description)
-            '    Me.Hide()
-            '    SettingDBB.ShowDialog()
+        'SQLconn.Close()
 
-            'End Try
-
-            'SQLconn.Close()
-
-            'Dim rKeyMySQL1 As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\IndieCashier\Database", True)
-            'Dim rKeyMySQL2 As RegistryKey = rKeyMySQL1.CreateSubKey("SQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
-            'Dim rKeyMySQL3 As RegistryKey = rKeyMySQL1.CreateSubKey("MySQL", RegistryKeyPermissionCheck.ReadWriteSubTree)
-
-
-
-            txtUserName.Text = ""
+        txtUserName.Text = ""
         txtPass.Text = ""
         'SettingDBSQL.Hide()
         'DBAlias.Hide()

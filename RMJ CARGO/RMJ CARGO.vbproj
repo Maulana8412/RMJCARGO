@@ -49,6 +49,9 @@
     <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
     <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\MySql.Data.dll</HintPath>
@@ -76,10 +79,22 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FrmKotaPengirimanList.Designer.vb">
+      <DependentUpon>FrmKotaPengirimanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKotaPengirimanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FrmLogin.Designer.vb">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPerusahaan.Designer.vb">
+      <DependentUpon>FrmPerusahaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPerusahaan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\MenuUtama.Designer.vb">
@@ -94,6 +109,12 @@
     <Compile Include="Form\SettingDBB.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\WaitProcess.Designer.vb">
+      <DependentUpon>WaitProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WaitProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modul\ModuleEncrypt.vb" />
     <Compile Include="Modul\ModuleFunction.vb" />
     <Compile Include="Modul\ModuleSQL.vb" />
@@ -102,14 +123,23 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Form\FrmKotaPengirimanList.resx">
+      <DependentUpon>FrmKotaPengirimanList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPerusahaan.resx">
+      <DependentUpon>FrmPerusahaan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\MenuUtama.resx">
       <DependentUpon>MenuUtama.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\SettingDBB.resx">
       <DependentUpon>SettingDBB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WaitProcess.resx">
+      <DependentUpon>WaitProcess.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -60,6 +60,7 @@ Public Class SettingDBB
             MsgBox("Program akan di tutup, untuk memperbarui setting database...", vbOKOnly, "Setting Database")
             Me.Close()
             MenuUtama.Close()
+            FrmLogin.Close()
         Catch ex As Exception
             MsgBox(Err.Description)
         End Try
@@ -77,7 +78,9 @@ Public Class SettingDBB
 
 
 
-    Private Sub LookUpEdit1_GotFocus(sender As Object, e As EventArgs)
+
+
+    Private Sub LookUpEdit1_GotFocus(sender As Object, e As EventArgs) Handles LookUpEdit1.GotFocus
         Try
             Dim list As List(Of String) = New List(Of String)
             Dim conString As String = "Server=" & TextEdit3.Text & ";Port=" & TextEdit4.Text & ";Uid=" & TextEdit5.Text & ";Pwd=" & TextEdit6.Text & ";SslMode = none"
@@ -98,12 +101,11 @@ Public Class SettingDBB
 
             End Using
         Catch ex As Exception
-            XtraMessageBox.AllowCustomLookAndFeel = True
-            XtraMessageBox.Show(Err.Description)
+            'XtraMessageBox.AllowCustomLookAndFeel = True
+            'XtraMessageBox.Show(Err.Description)
 
         End Try
     End Sub
-
 
 End Class
 
