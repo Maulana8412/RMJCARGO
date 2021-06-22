@@ -15,4 +15,12 @@ Public Class MenuUtama
     Private Sub MKotaPengiriman_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles MKotaPengiriman.ItemClick
         FrmKotaPengirimanList.Show()
     End Sub
+
+    Private Sub BarButtonItem1_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
+        FrmProdukList.Show()
+    End Sub
+
+    Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        FrmPelangganList.Show()
+    End Sub
 End Class

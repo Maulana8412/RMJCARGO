@@ -104,3 +104,15 @@ D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\ja\DevExpress.Office.v18.2.Core.
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\bin\Debug\ru\DevExpress.Office.v18.2.Core.resources.dll
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmKotaPengirimanList.resources
 D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.WaitProcess.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmKotaPengiriman.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmWilayah.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmKotaPengirimanEdit.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmProduk.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmProdukList.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmSatuan.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmProdukEdit.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmPelanggan.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmPelangganList.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmPembayaran.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmPajak.resources
+D:\PROJECT\VB.NET\RMJ CARGO\RMJ CARGO\obj\Debug\RMJ_CARGO.FrmPelangganEdit.resources

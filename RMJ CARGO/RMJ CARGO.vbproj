@@ -79,6 +79,18 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FrmKotaPengiriman.Designer.vb">
+      <DependentUpon>FrmKotaPengiriman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKotaPengiriman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmKotaPengirimanEdit.Designer.vb">
+      <DependentUpon>FrmKotaPengirimanEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKotaPengirimanEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FrmKotaPengirimanList.Designer.vb">
       <DependentUpon>FrmKotaPengirimanList.vb</DependentUpon>
     </Compile>
@@ -91,10 +103,64 @@
     <Compile Include="Form\FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\FrmPajak.Designer.vb">
+      <DependentUpon>FrmPajak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPajak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPelanggan.Designer.vb">
+      <DependentUpon>FrmPelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPelangganEdit.Designer.vb">
+      <DependentUpon>FrmPelangganEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPelangganEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPelangganList.Designer.vb">
+      <DependentUpon>FrmPelangganList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPelangganList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmPembayaran.Designer.vb">
+      <DependentUpon>FrmPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FrmPerusahaan.Designer.vb">
       <DependentUpon>FrmPerusahaan.vb</DependentUpon>
     </Compile>
     <Compile Include="Form\FrmPerusahaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmProduk.Designer.vb">
+      <DependentUpon>FrmProduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmProduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmProdukEdit.Designer.vb">
+      <DependentUpon>FrmProdukEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmProdukEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmProdukList.Designer.vb">
+      <DependentUpon>FrmProdukList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmProdukList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmWilayah.Designer.vb">
+      <DependentUpon>FrmWilayah.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmWilayah.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\MenuUtama.Designer.vb">
@@ -115,6 +181,12 @@
     <Compile Include="Form\WaitProcess.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmSatuan.Designer.vb">
+      <DependentUpon>FrmSatuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSatuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modul\ModuleEncrypt.vb" />
     <Compile Include="Modul\ModuleFunction.vb" />
     <Compile Include="Modul\ModuleSQL.vb" />
@@ -123,14 +195,47 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Form\FrmKotaPengiriman.resx">
+      <DependentUpon>FrmKotaPengiriman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmKotaPengirimanEdit.resx">
+      <DependentUpon>FrmKotaPengirimanEdit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmKotaPengirimanList.resx">
       <DependentUpon>FrmKotaPengirimanList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPajak.resx">
+      <DependentUpon>FrmPajak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPelanggan.resx">
+      <DependentUpon>FrmPelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPelangganEdit.resx">
+      <DependentUpon>FrmPelangganEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPelangganList.resx">
+      <DependentUpon>FrmPelangganList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPembayaran.resx">
+      <DependentUpon>FrmPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmPerusahaan.resx">
       <DependentUpon>FrmPerusahaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmProduk.resx">
+      <DependentUpon>FrmProduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmProdukEdit.resx">
+      <DependentUpon>FrmProdukEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmProdukList.resx">
+      <DependentUpon>FrmProdukList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmWilayah.resx">
+      <DependentUpon>FrmWilayah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\MenuUtama.resx">
       <DependentUpon>MenuUtama.vb</DependentUpon>
@@ -140,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\WaitProcess.resx">
       <DependentUpon>WaitProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSatuan.resx">
+      <DependentUpon>FrmSatuan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">

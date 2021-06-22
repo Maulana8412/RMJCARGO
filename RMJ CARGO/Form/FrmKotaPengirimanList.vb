@@ -3,7 +3,10 @@ Imports MySql.Data.MySqlClient
 
 Public Class FrmKotaPengirimanList
     Private Sub TextEdit1_EditValueChanged(sender As Object, e As EventArgs) Handles TextEdit1.EditValueChanged
-
+        If TextEdit1.Text = "" Or TextEdit1.Text = "<Kota Pengiriman>" Then
+        Else
+            GV.ActiveFilterString = "[kota] Like '%" + TextEdit1.Text + "%'"
+        End If
     End Sub
 
     Private Sub FrmKotaPengirimanList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -27,10 +30,11 @@ Public Class FrmKotaPengirimanList
             MySQLda.Fill(sqltable)
             GC.DataSource = sqltable
             GV.Columns(0).Width = 150
-            GV.Columns(0).Caption = "kota Pengiriman"
+            GV.Columns(0).Caption = "Kota Pengiriman"
             GV.Columns(1).Width = 100
             GV.Columns(1).Caption = "Wilayah"
             GV.Columns(2).Visible = False
+
 
             SplashScreenManager.CloseForm()
         Catch ex As Exception
@@ -48,9 +52,49 @@ Public Class FrmKotaPengirimanList
         End If
     End Sub
 
-    Private Sub FrmKotaPengirimanList_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
+    Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
+        FrmKotaPengiriman.Show()
+    End Sub
+
+    Private Sub TextEdit1_GotFocus(sender As Object, e As EventArgs) Handles TextEdit1.GotFocus
         If TextEdit1.Text = "<Kota Pengiriman>" Then
             TextEdit1.Text = ""
         End If
+    End Sub
+
+    Private Sub TextEdit1_LostFocus(sender As Object, e As EventArgs) Handles TextEdit1.LostFocus
+        TextEdit1.Text = "<Kota Pengiriman>"
+    End Sub
+
+    Private Sub BarButtonItem4_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem4.ItemClick
+        GV.ActiveFilterString = ""
+        tampilGrid()
+        TextEdit1.Text = "<Kota Pengiriman>"
+    End Sub
+
+    Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        FrmKotaPengirimanEdit.Show()
+        FrmKotaPengirimanEdit.Text = "Kota <" & GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString & ">"
+        FrmKotaPengirimanEdit.TextEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString
+        FrmKotaPengirimanEdit.LookUpEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "wilayah").ToString
+        If GV.GetRowCellValue(GV.FocusedRowHandle, "ibukota").ToString = "1" Then
+            FrmKotaPengirimanEdit.CheckEdit1.Checked = True
+        Else
+            FrmKotaPengirimanEdit.CheckEdit1.Checked = False
+        End If
+        FrmKotaPengirimanEdit.TextEdit1.Enabled = False
+    End Sub
+
+    Private Sub GV_DoubleClick(sender As Object, e As EventArgs) Handles GV.DoubleClick
+        FrmKotaPengirimanEdit.Show()
+        FrmKotaPengirimanEdit.Text = "Kota <" & GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString & ">"
+        FrmKotaPengirimanEdit.TextEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString
+        FrmKotaPengirimanEdit.LookUpEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "wilayah").ToString
+        If GV.GetRowCellValue(GV.FocusedRowHandle, "ibukota").ToString = "1" Then
+            FrmKotaPengirimanEdit.CheckEdit1.Checked = True
+        Else
+            FrmKotaPengirimanEdit.CheckEdit1.Checked = False
+        End If
+        FrmKotaPengirimanEdit.TextEdit1.Enabled = False
     End Sub
 End Class

@@ -70,9 +70,9 @@ Public Class FrmLogin
                 MySQLdr.Close()
 
 
-                'MenuUtama.BarStaticItem1.Caption = "Periode : " + Format(Now, "MM/yyyy")
-                'MenuUtama.BarStaticItem2.Caption = "Pengguna :"
-                'MenuUtama.BarStaticItem3.Caption = txtUserName.Text
+                MenuUtama.BarStaticItem1.Caption = "Periode : " + Format(Now, "MM/yyyy")
+                MenuUtama.BarStaticItem2.Caption = "Pengguna :"
+                MenuUtama.BarStaticItem3.Caption = txtUserName.Text
 
                 MenuUtama.Show()
 
@@ -109,9 +109,9 @@ Public Class FrmLogin
                 If MySQLdr.HasRows Then
                     MySQLdr.Close()
 
-                    'MenuUtama.BarStaticItem1.Caption = "Periode : " + Format(Now, "MM/yyyy")
-                    'MenuUtama.BarStaticItem2.Caption = "Pengguna :"
-                    'MenuUtama.BarStaticItem3.Caption = txtUserName.Text
+                    MenuUtama.BarStaticItem1.Caption = "Periode : " + Format(Now, "MM/yyyy")
+                    MenuUtama.BarStaticItem2.Caption = "Pengguna :"
+                    MenuUtama.BarStaticItem3.Caption = txtUserName.Text
                     MenuUtama.Show()
 
 

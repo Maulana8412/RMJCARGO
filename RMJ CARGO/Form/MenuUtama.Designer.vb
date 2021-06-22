@@ -25,10 +25,14 @@ Partial Class MenuUtama
         Me.BarSubItem1 = New DevExpress.XtraBars.BarSubItem()
         Me.MPerusahaan = New DevExpress.XtraBars.BarButtonItem()
         Me.MKotaPengiriman = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarSubItem2 = New DevExpress.XtraBars.BarSubItem()
         Me.BarSubItem3 = New DevExpress.XtraBars.BarSubItem()
         Me.BarSubItem4 = New DevExpress.XtraBars.BarSubItem()
         Me.Bar3 = New DevExpress.XtraBars.Bar()
+        Me.BarStaticItem1 = New DevExpress.XtraBars.BarStaticItem()
+        Me.BarStaticItem2 = New DevExpress.XtraBars.BarStaticItem()
+        Me.BarStaticItem3 = New DevExpress.XtraBars.BarStaticItem()
         Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
@@ -37,6 +41,7 @@ Partial Class MenuUtama
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.DocumentManager1 = New DevExpress.XtraBars.Docking2010.DocumentManager(Me.components)
         Me.TabbedView1 = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
+        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DocumentManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,9 +57,9 @@ Partial Class MenuUtama
         Me.BarManager1.DockControls.Add(Me.barDockControlRight)
         Me.BarManager1.DockManager = Me.DockManager1
         Me.BarManager1.Form = Me
-        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarSubItem1, Me.BarSubItem2, Me.BarSubItem3, Me.BarSubItem4, Me.MPerusahaan, Me.MKotaPengiriman})
+        Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarSubItem1, Me.BarSubItem2, Me.BarSubItem3, Me.BarSubItem4, Me.MPerusahaan, Me.MKotaPengiriman, Me.BarStaticItem1, Me.BarStaticItem2, Me.BarStaticItem3, Me.BarButtonItem1, Me.BarButtonItem2})
         Me.BarManager1.MainMenu = Me.Bar2
-        Me.BarManager1.MaxItemId = 6
+        Me.BarManager1.MaxItemId = 11
         Me.BarManager1.StatusBar = Me.Bar3
         '
         'Bar2
@@ -73,7 +78,7 @@ Partial Class MenuUtama
         '
         Me.BarSubItem1.Caption = "Master"
         Me.BarSubItem1.Id = 0
-        Me.BarSubItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.MPerusahaan), New DevExpress.XtraBars.LinkPersistInfo(Me.MKotaPengiriman)})
+        Me.BarSubItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.MPerusahaan), New DevExpress.XtraBars.LinkPersistInfo(Me.MKotaPengiriman), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BarButtonItem2)})
         Me.BarSubItem1.Name = "BarSubItem1"
         '
         'MPerusahaan
@@ -87,6 +92,12 @@ Partial Class MenuUtama
         Me.MKotaPengiriman.Caption = "Kota Pengiriman"
         Me.MKotaPengiriman.Id = 5
         Me.MKotaPengiriman.Name = "MKotaPengiriman"
+        '
+        'BarButtonItem1
+        '
+        Me.BarButtonItem1.Caption = "Produk"
+        Me.BarButtonItem1.Id = 9
+        Me.BarButtonItem1.Name = "BarButtonItem1"
         '
         'BarSubItem2
         '
@@ -113,10 +124,29 @@ Partial Class MenuUtama
         Me.Bar3.DockCol = 0
         Me.Bar3.DockRow = 0
         Me.Bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom
+        Me.Bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.BarStaticItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.BarStaticItem2), New DevExpress.XtraBars.LinkPersistInfo(Me.BarStaticItem3)})
         Me.Bar3.OptionsBar.AllowQuickCustomization = False
         Me.Bar3.OptionsBar.DrawDragBorder = False
         Me.Bar3.OptionsBar.UseWholeRow = True
         Me.Bar3.Text = "Status bar"
+        '
+        'BarStaticItem1
+        '
+        Me.BarStaticItem1.Caption = "Periode"
+        Me.BarStaticItem1.Id = 6
+        Me.BarStaticItem1.Name = "BarStaticItem1"
+        '
+        'BarStaticItem2
+        '
+        Me.BarStaticItem2.Caption = "Pengguna"
+        Me.BarStaticItem2.Id = 7
+        Me.BarStaticItem2.Name = "BarStaticItem2"
+        '
+        'BarStaticItem3
+        '
+        Me.BarStaticItem3.Caption = "Username"
+        Me.BarStaticItem3.Id = 8
+        Me.BarStaticItem3.Name = "BarStaticItem3"
         '
         'barDockControlTop
         '
@@ -131,10 +161,10 @@ Partial Class MenuUtama
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 444)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 438)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(2)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(754, 21)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(754, 27)
         '
         'barDockControlLeft
         '
@@ -143,7 +173,7 @@ Partial Class MenuUtama
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 24)
         Me.barDockControlLeft.Manager = Me.BarManager1
         Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(2)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 420)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 414)
         '
         'barDockControlRight
         '
@@ -152,7 +182,7 @@ Partial Class MenuUtama
         Me.barDockControlRight.Location = New System.Drawing.Point(754, 24)
         Me.barDockControlRight.Manager = Me.BarManager1
         Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(2)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 420)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 414)
         '
         'DockManager1
         '
@@ -171,6 +201,12 @@ Partial Class MenuUtama
         Me.DocumentManager1.View = Me.TabbedView1
         Me.DocumentManager1.ViewCollection.AddRange(New DevExpress.XtraBars.Docking2010.Views.BaseView() {Me.TabbedView1})
         '
+        'BarButtonItem2
+        '
+        Me.BarButtonItem2.Caption = "Pelanggan"
+        Me.BarButtonItem2.Id = 10
+        Me.BarButtonItem2.Name = "BarButtonItem2"
+        '
         'MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,7 +219,7 @@ Partial Class MenuUtama
         Me.IsMdiContainer = True
         Me.Name = "MenuUtama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MenuUtama"
+        Me.Text = "Menu Utama"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DockManager1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -210,4 +246,9 @@ Partial Class MenuUtama
     Friend WithEvents TabbedView1 As DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView
     Friend WithEvents MPerusahaan As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents MKotaPengiriman As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarStaticItem1 As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents BarStaticItem2 As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents BarStaticItem3 As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
 End Class
