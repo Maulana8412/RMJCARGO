@@ -148,16 +148,16 @@ Partial Class FrmProduk
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(3805, 235, 650, 400)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(672, 471)
+        Me.LayoutControl1.Size = New System.Drawing.Size(660, 459)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'SimpleButton2
         '
         Me.SimpleButton2.ImageOptions.Image = CType(resources.GetObject("SimpleButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton2.Location = New System.Drawing.Point(583, 276)
+        Me.SimpleButton2.Location = New System.Drawing.Point(575, 270)
         Me.SimpleButton2.Name = "SimpleButton2"
-        Me.SimpleButton2.Size = New System.Drawing.Size(77, 22)
+        Me.SimpleButton2.Size = New System.Drawing.Size(79, 24)
         Me.SimpleButton2.StyleController = Me.LayoutControl1
         Me.SimpleButton2.TabIndex = 22
         Me.SimpleButton2.Text = "Batal"
@@ -165,166 +165,166 @@ Partial Class FrmProduk
         'SimpleButton1
         '
         Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(502, 276)
+        Me.SimpleButton1.Location = New System.Drawing.Point(494, 270)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(77, 22)
+        Me.SimpleButton1.Size = New System.Drawing.Size(79, 24)
         Me.SimpleButton1.StyleController = Me.LayoutControl1
         Me.SimpleButton1.TabIndex = 21
         Me.SimpleButton1.Text = "Simpan"
         '
         'TextEdit13
         '
-        Me.TextEdit13.Location = New System.Drawing.Point(364, 252)
+        Me.TextEdit13.Location = New System.Drawing.Point(357, 246)
         Me.TextEdit13.Name = "TextEdit13"
         Me.TextEdit13.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit13.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit13.Size = New System.Drawing.Size(157, 20)
+        Me.TextEdit13.Size = New System.Drawing.Size(160, 20)
         Me.TextEdit13.StyleController = Me.LayoutControl1
         Me.TextEdit13.TabIndex = 20
         '
         'TextEdit12
         '
-        Me.TextEdit12.Location = New System.Drawing.Point(106, 252)
+        Me.TextEdit12.Location = New System.Drawing.Point(99, 246)
         Me.TextEdit12.Name = "TextEdit12"
         Me.TextEdit12.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit12.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit12.Size = New System.Drawing.Size(160, 20)
+        Me.TextEdit12.Size = New System.Drawing.Size(163, 20)
         Me.TextEdit12.StyleController = Me.LayoutControl1
         Me.TextEdit12.TabIndex = 19
         '
         'TextEdit11
         '
-        Me.TextEdit11.Location = New System.Drawing.Point(364, 228)
+        Me.TextEdit11.Location = New System.Drawing.Point(357, 222)
         Me.TextEdit11.Name = "TextEdit11"
         Me.TextEdit11.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit11.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit11.Size = New System.Drawing.Size(157, 20)
+        Me.TextEdit11.Size = New System.Drawing.Size(160, 20)
         Me.TextEdit11.StyleController = Me.LayoutControl1
         Me.TextEdit11.TabIndex = 18
         '
         'TextEdit10
         '
-        Me.TextEdit10.Location = New System.Drawing.Point(106, 228)
+        Me.TextEdit10.Location = New System.Drawing.Point(99, 222)
         Me.TextEdit10.Name = "TextEdit10"
         Me.TextEdit10.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit10.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit10.Size = New System.Drawing.Size(160, 20)
+        Me.TextEdit10.Size = New System.Drawing.Size(163, 20)
         Me.TextEdit10.StyleController = Me.LayoutControl1
         Me.TextEdit10.TabIndex = 17
         '
         'TextEdit9
         '
-        Me.TextEdit9.Location = New System.Drawing.Point(364, 204)
+        Me.TextEdit9.Location = New System.Drawing.Point(357, 198)
         Me.TextEdit9.Name = "TextEdit9"
         Me.TextEdit9.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit9.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit9.Size = New System.Drawing.Size(157, 20)
+        Me.TextEdit9.Size = New System.Drawing.Size(160, 20)
         Me.TextEdit9.StyleController = Me.LayoutControl1
         Me.TextEdit9.TabIndex = 16
         '
         'TextEdit8
         '
-        Me.TextEdit8.Location = New System.Drawing.Point(106, 204)
+        Me.TextEdit8.Location = New System.Drawing.Point(99, 198)
         Me.TextEdit8.Name = "TextEdit8"
         Me.TextEdit8.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit8.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit8.Size = New System.Drawing.Size(160, 20)
+        Me.TextEdit8.Size = New System.Drawing.Size(163, 20)
         Me.TextEdit8.StyleController = Me.LayoutControl1
         Me.TextEdit8.TabIndex = 15
         '
         'TextEdit7
         '
-        Me.TextEdit7.Location = New System.Drawing.Point(364, 180)
+        Me.TextEdit7.Location = New System.Drawing.Point(357, 174)
         Me.TextEdit7.Name = "TextEdit7"
         Me.TextEdit7.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit7.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit7.Size = New System.Drawing.Size(157, 20)
+        Me.TextEdit7.Size = New System.Drawing.Size(160, 20)
         Me.TextEdit7.StyleController = Me.LayoutControl1
         Me.TextEdit7.TabIndex = 14
         '
         'TextEdit6
         '
-        Me.TextEdit6.Location = New System.Drawing.Point(106, 180)
+        Me.TextEdit6.Location = New System.Drawing.Point(99, 174)
         Me.TextEdit6.Name = "TextEdit6"
         Me.TextEdit6.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit6.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit6.Size = New System.Drawing.Size(160, 20)
+        Me.TextEdit6.Size = New System.Drawing.Size(163, 20)
         Me.TextEdit6.StyleController = Me.LayoutControl1
         Me.TextEdit6.TabIndex = 13
         '
         'TextEdit5
         '
-        Me.TextEdit5.Location = New System.Drawing.Point(364, 156)
+        Me.TextEdit5.Location = New System.Drawing.Point(357, 150)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit5.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit5.Size = New System.Drawing.Size(157, 20)
+        Me.TextEdit5.Size = New System.Drawing.Size(160, 20)
         Me.TextEdit5.StyleController = Me.LayoutControl1
         Me.TextEdit5.TabIndex = 12
         '
         'TextEdit4
         '
-        Me.TextEdit4.Location = New System.Drawing.Point(106, 156)
+        Me.TextEdit4.Location = New System.Drawing.Point(99, 150)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit4.Size = New System.Drawing.Size(160, 20)
+        Me.TextEdit4.Size = New System.Drawing.Size(163, 20)
         Me.TextEdit4.StyleController = Me.LayoutControl1
         Me.TextEdit4.TabIndex = 11
         '
         'LookUpEdit3
         '
-        Me.LookUpEdit3.Location = New System.Drawing.Point(106, 132)
+        Me.LookUpEdit3.Location = New System.Drawing.Point(99, 126)
         Me.LookUpEdit3.Name = "LookUpEdit3"
         Me.LookUpEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.LookUpEdit3.Properties.NullText = ""
-        Me.LookUpEdit3.Size = New System.Drawing.Size(63, 20)
+        Me.LookUpEdit3.Size = New System.Drawing.Size(66, 20)
         Me.LookUpEdit3.StyleController = Me.LayoutControl1
         Me.LookUpEdit3.TabIndex = 10
         '
         'TextEdit3
         '
-        Me.TextEdit3.Location = New System.Drawing.Point(106, 108)
+        Me.TextEdit3.Location = New System.Drawing.Point(99, 102)
         Me.TextEdit3.Name = "TextEdit3"
-        Me.TextEdit3.Size = New System.Drawing.Size(144, 20)
+        Me.TextEdit3.Size = New System.Drawing.Size(147, 20)
         Me.TextEdit3.StyleController = Me.LayoutControl1
         Me.TextEdit3.TabIndex = 9
         '
         'TextEdit2
         '
-        Me.TextEdit2.Location = New System.Drawing.Point(106, 84)
+        Me.TextEdit2.Location = New System.Drawing.Point(99, 78)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Properties.Appearance.Options.UseTextOptions = True
         Me.TextEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
-        Me.TextEdit2.Size = New System.Drawing.Size(63, 20)
+        Me.TextEdit2.Size = New System.Drawing.Size(66, 20)
         Me.TextEdit2.StyleController = Me.LayoutControl1
         Me.TextEdit2.TabIndex = 8
         '
         'LookUpEdit2
         '
-        Me.LookUpEdit2.Location = New System.Drawing.Point(106, 60)
+        Me.LookUpEdit2.Location = New System.Drawing.Point(99, 54)
         Me.LookUpEdit2.Name = "LookUpEdit2"
         Me.LookUpEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.LookUpEdit2.Properties.NullText = ""
-        Me.LookUpEdit2.Size = New System.Drawing.Size(186, 20)
+        Me.LookUpEdit2.Size = New System.Drawing.Size(189, 20)
         Me.LookUpEdit2.StyleController = Me.LayoutControl1
         Me.LookUpEdit2.TabIndex = 7
         '
         'LookUpEdit1
         '
-        Me.LookUpEdit1.Location = New System.Drawing.Point(106, 36)
+        Me.LookUpEdit1.Location = New System.Drawing.Point(99, 30)
         Me.LookUpEdit1.Name = "LookUpEdit1"
         Me.LookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.LookUpEdit1.Properties.NullText = ""
-        Me.LookUpEdit1.Size = New System.Drawing.Size(186, 20)
+        Me.LookUpEdit1.Size = New System.Drawing.Size(189, 20)
         Me.LookUpEdit1.StyleController = Me.LayoutControl1
         Me.LookUpEdit1.TabIndex = 5
         '
         'TextEdit1
         '
-        Me.TextEdit1.Location = New System.Drawing.Point(106, 12)
+        Me.TextEdit1.Location = New System.Drawing.Point(99, 6)
         Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(186, 20)
+        Me.TextEdit1.Size = New System.Drawing.Size(189, 20)
         Me.TextEdit1.StyleController = Me.LayoutControl1
         Me.TextEdit1.TabIndex = 4
         '
@@ -334,7 +334,7 @@ Partial Class FrmProduk
         Me.Root.GroupBordersVisible = False
         Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.EmptySpaceItem1, Me.LayoutControlItem2, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlItem6, Me.LayoutControlItem3, Me.EmptySpaceItem2, Me.EmptySpaceItem3, Me.EmptySpaceItem4, Me.EmptySpaceItem5, Me.EmptySpaceItem6, Me.EmptySpaceItem7, Me.EmptySpaceItem8, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.LayoutControlItem13, Me.LayoutControlItem14, Me.LayoutControlItem15, Me.LayoutControlItem16, Me.EmptySpaceItem9, Me.EmptySpaceItem10, Me.EmptySpaceItem11, Me.EmptySpaceItem12, Me.EmptySpaceItem13, Me.LayoutControlItem17, Me.LayoutControlItem18})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(672, 471)
+        Me.Root.Size = New System.Drawing.Size(660, 459)
         Me.Root.TextVisible = False
         '
         'LayoutControlItem1
@@ -354,7 +354,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem1.AllowHotTrack = False
         Me.EmptySpaceItem1.Location = New System.Drawing.Point(0, 264)
         Me.EmptySpaceItem1.Name = "EmptySpaceItem1"
-        Me.EmptySpaceItem1.Size = New System.Drawing.Size(490, 26)
+        Me.EmptySpaceItem1.Size = New System.Drawing.Size(488, 26)
         Me.EmptySpaceItem1.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem2
@@ -422,7 +422,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem2.AllowHotTrack = False
         Me.EmptySpaceItem2.Location = New System.Drawing.Point(284, 0)
         Me.EmptySpaceItem2.Name = "EmptySpaceItem2"
-        Me.EmptySpaceItem2.Size = New System.Drawing.Size(368, 24)
+        Me.EmptySpaceItem2.Size = New System.Drawing.Size(366, 24)
         Me.EmptySpaceItem2.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem3
@@ -430,7 +430,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem3.AllowHotTrack = False
         Me.EmptySpaceItem3.Location = New System.Drawing.Point(284, 24)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(368, 24)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(366, 24)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem4
@@ -438,7 +438,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem4.AllowHotTrack = False
         Me.EmptySpaceItem4.Location = New System.Drawing.Point(284, 48)
         Me.EmptySpaceItem4.Name = "EmptySpaceItem4"
-        Me.EmptySpaceItem4.Size = New System.Drawing.Size(368, 24)
+        Me.EmptySpaceItem4.Size = New System.Drawing.Size(366, 24)
         Me.EmptySpaceItem4.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem5
@@ -446,7 +446,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem5.AllowHotTrack = False
         Me.EmptySpaceItem5.Location = New System.Drawing.Point(161, 72)
         Me.EmptySpaceItem5.Name = "EmptySpaceItem5"
-        Me.EmptySpaceItem5.Size = New System.Drawing.Size(491, 24)
+        Me.EmptySpaceItem5.Size = New System.Drawing.Size(489, 24)
         Me.EmptySpaceItem5.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem6
@@ -454,7 +454,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem6.AllowHotTrack = False
         Me.EmptySpaceItem6.Location = New System.Drawing.Point(242, 96)
         Me.EmptySpaceItem6.Name = "EmptySpaceItem6"
-        Me.EmptySpaceItem6.Size = New System.Drawing.Size(410, 24)
+        Me.EmptySpaceItem6.Size = New System.Drawing.Size(408, 24)
         Me.EmptySpaceItem6.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem7
@@ -462,7 +462,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem7.AllowHotTrack = False
         Me.EmptySpaceItem7.Location = New System.Drawing.Point(161, 120)
         Me.EmptySpaceItem7.Name = "EmptySpaceItem7"
-        Me.EmptySpaceItem7.Size = New System.Drawing.Size(491, 24)
+        Me.EmptySpaceItem7.Size = New System.Drawing.Size(489, 24)
         Me.EmptySpaceItem7.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem8
@@ -470,7 +470,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem8.AllowHotTrack = False
         Me.EmptySpaceItem8.Location = New System.Drawing.Point(0, 290)
         Me.EmptySpaceItem8.Name = "EmptySpaceItem8"
-        Me.EmptySpaceItem8.Size = New System.Drawing.Size(652, 161)
+        Me.EmptySpaceItem8.Size = New System.Drawing.Size(650, 159)
         Me.EmptySpaceItem8.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem7
@@ -598,7 +598,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem9.AllowHotTrack = False
         Me.EmptySpaceItem9.Location = New System.Drawing.Point(513, 144)
         Me.EmptySpaceItem9.Name = "EmptySpaceItem9"
-        Me.EmptySpaceItem9.Size = New System.Drawing.Size(139, 24)
+        Me.EmptySpaceItem9.Size = New System.Drawing.Size(137, 24)
         Me.EmptySpaceItem9.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem10
@@ -606,7 +606,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem10.AllowHotTrack = False
         Me.EmptySpaceItem10.Location = New System.Drawing.Point(513, 168)
         Me.EmptySpaceItem10.Name = "EmptySpaceItem10"
-        Me.EmptySpaceItem10.Size = New System.Drawing.Size(139, 24)
+        Me.EmptySpaceItem10.Size = New System.Drawing.Size(137, 24)
         Me.EmptySpaceItem10.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem11
@@ -614,7 +614,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem11.AllowHotTrack = False
         Me.EmptySpaceItem11.Location = New System.Drawing.Point(513, 192)
         Me.EmptySpaceItem11.Name = "EmptySpaceItem11"
-        Me.EmptySpaceItem11.Size = New System.Drawing.Size(139, 24)
+        Me.EmptySpaceItem11.Size = New System.Drawing.Size(137, 24)
         Me.EmptySpaceItem11.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem12
@@ -622,7 +622,7 @@ Partial Class FrmProduk
         Me.EmptySpaceItem12.AllowHotTrack = False
         Me.EmptySpaceItem12.Location = New System.Drawing.Point(513, 216)
         Me.EmptySpaceItem12.Name = "EmptySpaceItem12"
-        Me.EmptySpaceItem12.Size = New System.Drawing.Size(139, 24)
+        Me.EmptySpaceItem12.Size = New System.Drawing.Size(137, 24)
         Me.EmptySpaceItem12.TextSize = New System.Drawing.Size(0, 0)
         '
         'EmptySpaceItem13
@@ -630,13 +630,13 @@ Partial Class FrmProduk
         Me.EmptySpaceItem13.AllowHotTrack = False
         Me.EmptySpaceItem13.Location = New System.Drawing.Point(513, 240)
         Me.EmptySpaceItem13.Name = "EmptySpaceItem13"
-        Me.EmptySpaceItem13.Size = New System.Drawing.Size(139, 24)
+        Me.EmptySpaceItem13.Size = New System.Drawing.Size(137, 24)
         Me.EmptySpaceItem13.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlItem17
         '
         Me.LayoutControlItem17.Control = Me.SimpleButton1
-        Me.LayoutControlItem17.Location = New System.Drawing.Point(490, 264)
+        Me.LayoutControlItem17.Location = New System.Drawing.Point(488, 264)
         Me.LayoutControlItem17.MaxSize = New System.Drawing.Size(81, 26)
         Me.LayoutControlItem17.MinSize = New System.Drawing.Size(81, 26)
         Me.LayoutControlItem17.Name = "LayoutControlItem17"
@@ -648,7 +648,7 @@ Partial Class FrmProduk
         'LayoutControlItem18
         '
         Me.LayoutControlItem18.Control = Me.SimpleButton2
-        Me.LayoutControlItem18.Location = New System.Drawing.Point(571, 264)
+        Me.LayoutControlItem18.Location = New System.Drawing.Point(569, 264)
         Me.LayoutControlItem18.MaxSize = New System.Drawing.Size(81, 26)
         Me.LayoutControlItem18.MinSize = New System.Drawing.Size(81, 26)
         Me.LayoutControlItem18.Name = "LayoutControlItem18"
@@ -661,7 +661,7 @@ Partial Class FrmProduk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(672, 471)
+        Me.ClientSize = New System.Drawing.Size(660, 459)
         Me.Controls.Add(Me.LayoutControl1)
         Me.Name = "FrmProduk"
         Me.Text = "Produk Baru"

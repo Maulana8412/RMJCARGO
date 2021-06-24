@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmPelangganList
+Partial Class FrmPengirimanList
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
@@ -20,10 +20,11 @@ Partial Class FrmPelangganList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPelangganList))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPengirimanList))
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
-        Me.TextEdit2 = New DevExpress.XtraEditors.TextEdit()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.CheckEdit1 = New DevExpress.XtraEditors.CheckEdit()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar1 = New DevExpress.XtraBars.Bar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
@@ -34,9 +35,12 @@ Partial Class FrmPelangganList
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
-        Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
+        Me.DateEdit2 = New DevExpress.XtraEditors.DateEdit()
+        Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
+        Me.LookUpEdit1 = New DevExpress.XtraEditors.LookUpEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-        Me.GC = New DevExpress.XtraGrid.GridControl()
+        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
         Me.GV = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
@@ -45,10 +49,14 @@ Partial Class FrmPelangganList
         Me.LayoutControl1.SuspendLayout()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GC, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,34 +66,47 @@ Partial Class FrmPelangganList
         'LayoutControl1
         '
         Me.LayoutControl1.Controls.Add(Me.GroupControl1)
-        Me.LayoutControl1.Controls.Add(Me.GC)
+        Me.LayoutControl1.Controls.Add(Me.GridControl1)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 29)
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(664, 322)
+        Me.LayoutControl1.Size = New System.Drawing.Size(619, 380)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'GroupControl1
         '
-        Me.GroupControl1.Controls.Add(Me.TextEdit2)
-        Me.GroupControl1.Controls.Add(Me.TextEdit1)
+        Me.GroupControl1.Controls.Add(Me.SimpleButton1)
+        Me.GroupControl1.Controls.Add(Me.CheckEdit1)
+        Me.GroupControl1.Controls.Add(Me.LabelControl3)
+        Me.GroupControl1.Controls.Add(Me.DateEdit2)
+        Me.GroupControl1.Controls.Add(Me.DateEdit1)
+        Me.GroupControl1.Controls.Add(Me.LookUpEdit1)
         Me.GroupControl1.Controls.Add(Me.LabelControl1)
-        Me.GroupControl1.Location = New System.Drawing.Point(6, 6)
+        Me.GroupControl1.Location = New System.Drawing.Point(12, 12)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(174, 310)
+        Me.GroupControl1.Size = New System.Drawing.Size(184, 356)
         Me.GroupControl1.TabIndex = 5
         Me.GroupControl1.Text = "Filter"
         '
-        'TextEdit2
+        'SimpleButton1
         '
-        Me.TextEdit2.EditValue = "<Nama Pelanggan>"
-        Me.TextEdit2.Location = New System.Drawing.Point(18, 79)
-        Me.TextEdit2.MenuManager = Me.BarManager1
-        Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Size = New System.Drawing.Size(149, 20)
-        Me.TextEdit2.TabIndex = 2
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(44, 172)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(75, 23)
+        Me.SimpleButton1.TabIndex = 10
+        Me.SimpleButton1.Text = "Proses"
+        '
+        'CheckEdit1
+        '
+        Me.CheckEdit1.Location = New System.Drawing.Point(5, 83)
+        Me.CheckEdit1.MenuManager = Me.BarManager1
+        Me.CheckEdit1.Name = "CheckEdit1"
+        Me.CheckEdit1.Properties.Caption = "Tanggal"
+        Me.CheckEdit1.Size = New System.Drawing.Size(75, 19)
+        Me.CheckEdit1.TabIndex = 9
         '
         'BarManager1
         '
@@ -147,15 +168,15 @@ Partial Class FrmPelangganList
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(664, 29)
+        Me.barDockControlTop.Size = New System.Drawing.Size(619, 29)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 351)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 409)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(664, 0)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(619, 0)
         '
         'barDockControlLeft
         '
@@ -163,51 +184,80 @@ Partial Class FrmPelangganList
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 29)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 322)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 380)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(664, 29)
+        Me.barDockControlRight.Location = New System.Drawing.Point(619, 29)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 322)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 380)
         '
-        'TextEdit1
+        'LabelControl3
         '
-        Me.TextEdit1.EditValue = "<No. Pelanggan>"
-        Me.TextEdit1.Location = New System.Drawing.Point(18, 53)
-        Me.TextEdit1.MenuManager = Me.BarManager1
-        Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(149, 20)
-        Me.TextEdit1.TabIndex = 1
+        Me.LabelControl3.Location = New System.Drawing.Point(16, 133)
+        Me.LabelControl3.Name = "LabelControl3"
+        Me.LabelControl3.Size = New System.Drawing.Size(15, 13)
+        Me.LabelControl3.TabIndex = 8
+        Me.LabelControl3.Text = "s/d"
+        '
+        'DateEdit2
+        '
+        Me.DateEdit2.EditValue = Nothing
+        Me.DateEdit2.Location = New System.Drawing.Point(5, 146)
+        Me.DateEdit2.MenuManager = Me.BarManager1
+        Me.DateEdit2.Name = "DateEdit2"
+        Me.DateEdit2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit2.Size = New System.Drawing.Size(160, 20)
+        Me.DateEdit2.TabIndex = 3
+        '
+        'DateEdit1
+        '
+        Me.DateEdit1.EditValue = Nothing
+        Me.DateEdit1.Location = New System.Drawing.Point(5, 106)
+        Me.DateEdit1.MenuManager = Me.BarManager1
+        Me.DateEdit1.Name = "DateEdit1"
+        Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Size = New System.Drawing.Size(160, 20)
+        Me.DateEdit1.TabIndex = 2
+        '
+        'LookUpEdit1
+        '
+        Me.LookUpEdit1.Location = New System.Drawing.Point(5, 57)
+        Me.LookUpEdit1.MenuManager = Me.BarManager1
+        Me.LookUpEdit1.Name = "LookUpEdit1"
+        Me.LookUpEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.LookUpEdit1.Properties.NullText = "<Semua Pelanggan>"
+        Me.LookUpEdit1.Size = New System.Drawing.Size(176, 20)
+        Me.LookUpEdit1.TabIndex = 1
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(5, 35)
+        Me.LabelControl1.Location = New System.Drawing.Point(5, 39)
         Me.LabelControl1.Name = "LabelControl1"
         Me.LabelControl1.Size = New System.Drawing.Size(26, 13)
         Me.LabelControl1.TabIndex = 0
         Me.LabelControl1.Text = "Cari :"
         '
-        'GC
+        'GridControl1
         '
-        Me.GC.Location = New System.Drawing.Point(182, 6)
-        Me.GC.MainView = Me.GV
-        Me.GC.Name = "GC"
-        Me.GC.Size = New System.Drawing.Size(476, 310)
-        Me.GC.TabIndex = 4
-        Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
+        Me.GridControl1.Location = New System.Drawing.Point(200, 12)
+        Me.GridControl1.MainView = Me.GV
+        Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.Size = New System.Drawing.Size(407, 356)
+        Me.GridControl1.TabIndex = 4
+        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
         '
         'GV
         '
-        Me.GV.GridControl = Me.GC
-        Me.GV.LevelIndent = 0
+        Me.GV.GridControl = Me.GridControl1
         Me.GV.Name = "GV"
         Me.GV.OptionsBehavior.Editable = False
         Me.GV.OptionsView.ColumnAutoWidth = False
         Me.GV.OptionsView.ShowGroupPanel = False
-        Me.GV.PreviewIndent = 0
         '
         'Root
         '
@@ -215,15 +265,15 @@ Partial Class FrmPelangganList
         Me.Root.GroupBordersVisible = False
         Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(664, 322)
+        Me.Root.Size = New System.Drawing.Size(619, 380)
         Me.Root.TextVisible = False
         '
         'LayoutControlItem1
         '
-        Me.LayoutControlItem1.Control = Me.GC
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(176, 0)
+        Me.LayoutControlItem1.Control = Me.GridControl1
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(188, 0)
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(478, 312)
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(411, 360)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
         '
@@ -231,35 +281,39 @@ Partial Class FrmPelangganList
         '
         Me.LayoutControlItem2.Control = Me.GroupControl1
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(176, 0)
-        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(176, 5)
+        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(188, 0)
+        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(188, 5)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(176, 312)
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(188, 360)
         Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem2.TextVisible = False
         '
-        'FrmPelangganList
+        'FrmPengirimanList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(664, 351)
+        Me.ClientSize = New System.Drawing.Size(619, 409)
         Me.Controls.Add(Me.LayoutControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Name = "FrmPelangganList"
-        Me.Text = "Daftar Pelanggan"
+        Me.Name = "FrmPengirimanList"
+        Me.Text = "Daftar Pengiriman"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
         Me.GroupControl1.PerformLayout()
-        CType(Me.TextEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CheckEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GC, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit2.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DateEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LookUpEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -271,10 +325,10 @@ Partial Class FrmPelangganList
 
     Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
     Friend WithEvents Root As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents GC As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GV As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
     Friend WithEvents Bar1 As DevExpress.XtraBars.Bar
@@ -286,7 +340,11 @@ Partial Class FrmPelangganList
     Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LookUpEdit1 As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents TextEdit2 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents DateEdit2 As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents DateEdit1 As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents CheckEdit1 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmKotaPengirimanList
+Partial Class FrmKaryawanList
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
@@ -20,15 +20,11 @@ Partial Class FrmKotaPengirimanList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmKotaPengirimanList))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmKaryawanList))
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit()
-        Me.GC = New DevExpress.XtraGrid.GridControl()
-        Me.GV = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.BarManager1 = New DevExpress.XtraBars.BarManager(Me.components)
         Me.Bar1 = New DevExpress.XtraBars.Bar()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
@@ -39,17 +35,22 @@ Partial Class FrmKotaPengirimanList
         Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
         Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
+        Me.GC = New DevExpress.XtraGrid.GridControl()
+        Me.GV = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.Root = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LayoutControl1.SuspendLayout()
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupControl1.SuspendLayout()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LayoutControl1
@@ -57,79 +58,42 @@ Partial Class FrmKotaPengirimanList
         Me.LayoutControl1.Controls.Add(Me.GroupControl1)
         Me.LayoutControl1.Controls.Add(Me.GC)
         Me.LayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LayoutControl1.Location = New System.Drawing.Point(0, 29)
+        Me.LayoutControl1.Location = New System.Drawing.Point(0, 31)
+        Me.LayoutControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.LayoutControl1.Name = "LayoutControl1"
-        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(3718, 102, 650, 400)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(653, 382)
+        Me.LayoutControl1.Size = New System.Drawing.Size(570, 269)
         Me.LayoutControl1.TabIndex = 0
         Me.LayoutControl1.Text = "LayoutControl1"
         '
         'GroupControl1
         '
+        Me.GroupControl1.Controls.Add(Me.LabelControl1)
         Me.GroupControl1.Controls.Add(Me.TextEdit1)
-        Me.GroupControl1.Location = New System.Drawing.Point(12, 2)
+        Me.GroupControl1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(175, 368)
+        Me.GroupControl1.Size = New System.Drawing.Size(174, 245)
         Me.GroupControl1.TabIndex = 5
         Me.GroupControl1.Text = "Filter"
         '
+        'LabelControl1
+        '
+        Me.LabelControl1.Location = New System.Drawing.Point(6, 28)
+        Me.LabelControl1.Name = "LabelControl1"
+        Me.LabelControl1.Size = New System.Drawing.Size(26, 13)
+        Me.LabelControl1.TabIndex = 1
+        Me.LabelControl1.Text = "Cari :"
+        '
         'TextEdit1
         '
-        Me.TextEdit1.Location = New System.Drawing.Point(5, 33)
+        Me.TextEdit1.EditValue = "<Nama Karyawan>"
+        Me.TextEdit1.Location = New System.Drawing.Point(4, 46)
+        Me.TextEdit1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextEdit1.MenuManager = Me.BarManager1
         Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(165, 20)
-        Me.TextEdit1.TabIndex = 20
-        '
-        'GC
-        '
-        Me.GC.Location = New System.Drawing.Point(191, 2)
-        Me.GC.MainView = Me.GV
-        Me.GC.Name = "GC"
-        Me.GC.Size = New System.Drawing.Size(450, 368)
-        Me.GC.TabIndex = 0
-        Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
-        '
-        'GV
-        '
-        Me.GV.GridControl = Me.GC
-        Me.GV.LevelIndent = 0
-        Me.GV.Name = "GV"
-        Me.GV.OptionsBehavior.Editable = False
-        Me.GV.OptionsView.ColumnAutoWidth = False
-        Me.GV.OptionsView.ShowGroupPanel = False
-        Me.GV.PreviewIndent = 0
-        '
-        'Root
-        '
-        Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.Root.GroupBordersVisible = False
-        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2})
-        Me.Root.Name = "Root"
-        Me.Root.Padding = New DevExpress.XtraLayout.Utils.Padding(10, 10, 0, 10)
-        Me.Root.Size = New System.Drawing.Size(653, 382)
-        Me.Root.TextVisible = False
-        '
-        'LayoutControlItem1
-        '
-        Me.LayoutControlItem1.Control = Me.GC
-        Me.LayoutControlItem1.Location = New System.Drawing.Point(179, 0)
-        Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Size = New System.Drawing.Size(454, 372)
-        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem1.TextVisible = False
-        '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.Control = Me.GroupControl1
-        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(179, 0)
-        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(179, 5)
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(179, 372)
-        Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem2.TextVisible = False
+        Me.TextEdit1.Size = New System.Drawing.Size(170, 20)
+        Me.TextEdit1.TabIndex = 0
         '
         'BarManager1
         '
@@ -191,55 +155,114 @@ Partial Class FrmKotaPengirimanList
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Manager = Me.BarManager1
-        Me.barDockControlTop.Size = New System.Drawing.Size(653, 29)
+        Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(2)
+        Me.barDockControlTop.Size = New System.Drawing.Size(570, 31)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 411)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 300)
         Me.barDockControlBottom.Manager = Me.BarManager1
-        Me.barDockControlBottom.Size = New System.Drawing.Size(653, 0)
+        Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(2)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(570, 0)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 29)
+        Me.barDockControlLeft.Location = New System.Drawing.Point(0, 31)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 382)
+        Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(2)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 269)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(653, 29)
+        Me.barDockControlRight.Location = New System.Drawing.Point(570, 31)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 382)
+        Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(2)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 269)
         '
-        'FrmKotaPengirimanList
+        'GC
+        '
+        Me.GC.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(1)
+        Me.GC.Location = New System.Drawing.Point(190, 12)
+        Me.GC.MainView = Me.GV
+        Me.GC.Margin = New System.Windows.Forms.Padding(2)
+        Me.GC.Name = "GC"
+        Me.GC.Size = New System.Drawing.Size(368, 245)
+        Me.GC.TabIndex = 4
+        Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
+        '
+        'GV
+        '
+        Me.GV.DetailHeight = 182
+        Me.GV.FixedLineWidth = 1
+        Me.GV.GridControl = Me.GC
+        Me.GV.LevelIndent = 0
+        Me.GV.Name = "GV"
+        Me.GV.OptionsBehavior.Editable = False
+        Me.GV.OptionsView.ColumnAutoWidth = False
+        Me.GV.OptionsView.ShowGroupPanel = False
+        Me.GV.PreviewIndent = 0
+        '
+        'Root
+        '
+        Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
+        Me.Root.GroupBordersVisible = False
+        Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlItem2})
+        Me.Root.Name = "Root"
+        Me.Root.Size = New System.Drawing.Size(570, 269)
+        Me.Root.TextVisible = False
+        '
+        'LayoutControlItem1
+        '
+        Me.LayoutControlItem1.Control = Me.GC
+        Me.LayoutControlItem1.Location = New System.Drawing.Point(178, 0)
+        Me.LayoutControlItem1.Name = "LayoutControlItem1"
+        Me.LayoutControlItem1.Size = New System.Drawing.Size(372, 249)
+        Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem1.TextVisible = False
+        '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.Control = Me.GroupControl1
+        Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem2.MaxSize = New System.Drawing.Size(178, 0)
+        Me.LayoutControlItem2.MinSize = New System.Drawing.Size(178, 3)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(178, 249)
+        Me.LayoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
+        Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem2.TextVisible = False
+        '
+        'FrmKaryawanList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(653, 411)
+        Me.ClientSize = New System.Drawing.Size(570, 300)
         Me.Controls.Add(Me.LayoutControl1)
         Me.Controls.Add(Me.barDockControlLeft)
         Me.Controls.Add(Me.barDockControlRight)
         Me.Controls.Add(Me.barDockControlBottom)
         Me.Controls.Add(Me.barDockControlTop)
-        Me.Name = "FrmKotaPengirimanList"
-        Me.Text = "Daftar Kota Pengiriman"
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Name = "FrmKaryawanList"
+        Me.Text = "Daftar Karyawan"
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LayoutControl1.ResumeLayout(False)
         CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupControl1.ResumeLayout(False)
+        Me.GroupControl1.PerformLayout()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -247,12 +270,11 @@ Partial Class FrmKotaPengirimanList
 
     Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
     Friend WithEvents Root As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents GC As DevExpress.XtraGrid.GridControl
     Friend WithEvents GV As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
     Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
     Friend WithEvents Bar1 As DevExpress.XtraBars.Bar
     Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
@@ -263,4 +285,6 @@ Partial Class FrmKotaPengirimanList
     Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
     Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+    Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
 End Class

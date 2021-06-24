@@ -20,7 +20,7 @@ Public Class FrmKotaPengirimanList
             SplashScreenManager.ShowForm(GetType(WaitProcess))
             MySQLcmd = New MySqlCommand("select kota, " &
                                         "wilayah, " &
-                                        "ibukota from kotapengiriman " &
+                                        "ibukota,kodepos from kotapengiriman " &
                                         "order by kota", MySQLconn)
             MySQLcmd.CommandType = CommandType.Text
             MySQLdr.Close()
@@ -34,7 +34,7 @@ Public Class FrmKotaPengirimanList
             GV.Columns(1).Width = 100
             GV.Columns(1).Caption = "Wilayah"
             GV.Columns(2).Visible = False
-
+            GV.Columns(3).Visible = False
 
             SplashScreenManager.CloseForm()
         Catch ex As Exception
@@ -77,6 +77,7 @@ Public Class FrmKotaPengirimanList
         FrmKotaPengirimanEdit.Text = "Kota <" & GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString & ">"
         FrmKotaPengirimanEdit.TextEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString
         FrmKotaPengirimanEdit.LookUpEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "wilayah").ToString
+        FrmKotaPengirimanEdit.TextEdit2.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kodepos").ToString
         If GV.GetRowCellValue(GV.FocusedRowHandle, "ibukota").ToString = "1" Then
             FrmKotaPengirimanEdit.CheckEdit1.Checked = True
         Else
@@ -90,6 +91,7 @@ Public Class FrmKotaPengirimanList
         FrmKotaPengirimanEdit.Text = "Kota <" & GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString & ">"
         FrmKotaPengirimanEdit.TextEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kota").ToString
         FrmKotaPengirimanEdit.LookUpEdit1.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "wilayah").ToString
+        FrmKotaPengirimanEdit.TextEdit2.Text = GV.GetRowCellValue(GV.FocusedRowHandle, "kodepos").ToString
         If GV.GetRowCellValue(GV.FocusedRowHandle, "ibukota").ToString = "1" Then
             FrmKotaPengirimanEdit.CheckEdit1.Checked = True
         Else

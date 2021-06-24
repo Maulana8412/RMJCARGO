@@ -55,13 +55,14 @@ Public Class FrmKotaPengirimanEdit
             End If
             MySQLcmd = New MySqlCommand("UPDATE kotapengiriman set wilayah=@wilayah, " &
                                         "ibukota=@ibukota, " &
-                                        "username=@username " &
-                                        "where kota=@kota", MySQLconn)
+                                        "username=@username, " &
+                                        "kodepos=@kodepos where kota=@kota", MySQLconn)
             With MySQLcmd
                 .Parameters.AddWithValue("@kota", TextEdit1.Text)
                 .Parameters.AddWithValue("@wilayah", LookUpEdit1.Text)
                 .Parameters.AddWithValue("@ibukota", ibukota)
                 .Parameters.AddWithValue("@username", MenuUtama.BarStaticItem3.Caption)
+                .Parameters.AddWithValue("@kodepos", TextEdit2.Text)
             End With
             MySQLcmd.ExecuteNonQuery()
 
@@ -70,7 +71,7 @@ Public Class FrmKotaPengirimanEdit
             TextEdit1.Text = ""
             LookUpEdit1.Text = ""
             CheckEdit1.Checked = False
-
+            TextEdit2.Text = ""
         Catch ex As Exception
             MsgBox(Err.Description)
         End Try

@@ -79,6 +79,30 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\FrmJabatan.Designer.vb">
+      <DependentUpon>FrmJabatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmJabatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmKaryawan.Designer.vb">
+      <DependentUpon>FrmKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FRMKARYAWANEdit.Designer.vb">
+      <DependentUpon>FrmKaryawanEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKaryawanEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmKaryawanList.Designer.vb">
+      <DependentUpon>FrmKaryawanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmKaryawanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FrmKotaPengiriman.Designer.vb">
       <DependentUpon>FrmKotaPengiriman.vb</DependentUpon>
     </Compile>
@@ -133,6 +157,12 @@
     <Compile Include="Form\FrmPembayaran.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\FrmPengirimanList.Designer.vb">
+      <DependentUpon>FrmPengirimanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPengirimanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FrmPerusahaan.Designer.vb">
       <DependentUpon>FrmPerusahaan.vb</DependentUpon>
     </Compile>
@@ -169,6 +199,12 @@
     <Compile Include="Form\MenuUtama.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\FrmPengiriman.Designer.vb">
+      <DependentUpon>FrmPengiriman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmPengiriman.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\SettingDBB.Designer.vb">
       <DependentUpon>SettingDBB.vb</DependentUpon>
     </Compile>
@@ -195,6 +231,18 @@
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="Form\FrmJabatan.resx">
+      <DependentUpon>FrmJabatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmKaryawan.resx">
+      <DependentUpon>FrmKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FRMKARYAWANEdit.resx">
+      <DependentUpon>FrmKaryawanEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmKaryawanList.resx">
+      <DependentUpon>FrmKaryawanList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmKotaPengiriman.resx">
       <DependentUpon>FrmKotaPengiriman.vb</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +269,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmPembayaran.resx">
       <DependentUpon>FrmPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPengiriman.resx">
+      <DependentUpon>FrmPengiriman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmPengirimanList.resx">
+      <DependentUpon>FrmPengirimanList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FrmPerusahaan.resx">
       <DependentUpon>FrmPerusahaan.vb</DependentUpon>

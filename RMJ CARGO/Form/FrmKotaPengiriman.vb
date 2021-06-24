@@ -56,15 +56,18 @@ Public Class FrmKotaPengiriman
             MySQLcmd = New MySqlCommand("INSERT INTO kotapengiriman(kota," &
                                         "wilayah, " &
                                         "ibukota, " &
-                                        "username)values(@kota, " &
+                                        "username, " &
+                                        "kodepos)values(@kota, " &
                                         "@wilayah, " &
                                         "@ibukota, " &
-                                        "@username)", MySQLconn)
+                                        "@username, " &
+                                        "@kodepos)", MySQLconn)
             With MySQLcmd
                 .Parameters.AddWithValue("@kota", TextEdit1.Text)
                 .Parameters.AddWithValue("@wilayah", LookUpEdit1.Text)
                 .Parameters.AddWithValue("@ibukota", ibukota)
                 .Parameters.AddWithValue("@username", MenuUtama.BarStaticItem3.Caption)
+                .Parameters.AddWithValue("@kodepos", TextEdit2.Text)
             End With
             MySQLcmd.ExecuteNonQuery()
 
@@ -73,6 +76,7 @@ Public Class FrmKotaPengiriman
             TextEdit1.Text = ""
             LookUpEdit1.Text = ""
             CheckEdit1.Checked = False
+            TextEdit2.Text = ""
 
         Catch ex As Exception
             MsgBox(Err.Description)
